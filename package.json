@@ -1,0 +1,23 @@
+{
+  "name": "lab-7-uwu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UMM-CSci-4453-S19/lab-7-uwu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UMM-CSci-4453-S19/lab-7-uwu/issues"
+  },
+  "homepage": "https://github.com/UMM-CSci-4453-S19/lab-7-uwu#readme",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {}
+}
