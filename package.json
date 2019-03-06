@@ -1,7 +1,7 @@
 {
   "name": "lab-7-uwu",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Table of Contents - [Asynchronous node](#asynchronous-node)   - [Approach One: Coordinate using a data structure](#approach-one--coordinate-using-a-data-structure)   - [Approach Two: Using promises](#approach-two--using-promises)     - [What is a promise](#what-is-a-promise)     - [Back to databases](#back-to-databases)     - [Bringing in promises](#bringing-in-promises)     - [Connection pools and promises](#connection-pools-and-promises)     - [Making things a bit cleaner](#making-things-a-bit-cleaner)     - [More about promises in general](#more-about-promises-in-general) - [Angular](#angular)   - [Working our way up to it](#working-our-way-up-to-it)   - [An angular tutorial](#an-angular-tutorial)   - [Complicating the web server](#complicating-the-web-server)   - [Mixing in a little database](#mixing-in-a-little-database)   - [Adding a little bit of functionality](#adding-a-little-bit-of-functionality) - [To Do](#to-do)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/UMM-CSci-4453-S19/lab-7-uwu#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "mysql": "^2.16.0"
   },
   "devDependencies": {}
