@@ -12,10 +12,8 @@
     <h1>Cash Register</h1>
     <div id="buttons" ng-controller="buttonCtrl" >
     <div ng-repeat="button in buttons">
-    <div style="position:absolute;left:{{button.left}}px;top:{{button.top}}px"><button id="{{button.buttonID}}" >{{button.label}}</button></div>
+    <div style="position:absolute;left:{{button.left}}px;top:{{button.top}}px;"><button id="{{button.buttonID}}" style="width:{{button.width}}%" >{{button.label}}</button></div>
     </div>
-
-    // Your job is to create a table called till_buttons that will hold all the data necessary to describe a button-- values like left, top, button_id, and label. Then you will modify lab7server.js so that instead of sending the data in the array buttons, it will send the properly formatted results of an SQL query:
 
 
     </div>

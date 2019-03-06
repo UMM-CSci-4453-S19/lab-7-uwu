@@ -5,8 +5,8 @@ var credentials = require('../credentials.json');
 
 var mysql=require("mysql");
 
-credentials.host="ids"
-credentials.database = "create_tables"
+credentials.host="ids";
+credentials.database = "Waterfall";
 var connection = mysql.createConnection(credentials);
 var Promise = require('bluebird');
 var using = Promise.using;
@@ -33,13 +33,14 @@ var result = query("select * from till_buttons;");
 result.then(function(dbfs,err){
     var dbfarr = new Array(dbfs.length);
     dbfs.forEach(function (item, index) {
-        dbfarr[index] = {"buttonID":item.button_id,
-            "buttonleft":item.leftPosition,
-            "top":item.topPosition,
-            "width":item.wide,
+        dbfarr[index] = {"buttonID":item.buttonID,
+            "left":item.buttonLeft,
+            "top":item.top,
+            "width":item.width,
             "label":item.label,
             "invID":item.invID};
-    })
+    });
+    console.log(dbfarr);
     app.use(express.static(__dirname + '/public')); //Serves the web pages
     app.get("/buttons",function(req,res){ // handles the /buttons API
         res.send(dbfarr);
